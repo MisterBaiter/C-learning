@@ -7,9 +7,9 @@ char grades[5];
 
 int main() {
 cout << "Enter Student scores:";
-cin >> student[0] >> student[1] >> student[2] >> student[3] >> student[4];
+cin >> student[0] >> student[1] >> student[2] >> student[3] >> student[4]; //input of scores
 
-for(int i = 0; i < 5; i++) {
+for(int i = 0; i < 5; i++) { //scores to grades calc
         if(student[i] >= 90) {
             grades[i] = 'A';
         } else if(student[i] >= 80) {
@@ -21,7 +21,7 @@ for(int i = 0; i < 5; i++) {
         } else {
             grades[i] = 'F';
         }
-        printf("Student %d: Score = %d, Grade = %c\n", i+1, student[i], grades[i]);
+        cout << ("Student %d: Score = %d, Grade = %c\n", i+1, student[i], grades[i]); //final print off grades
     }
     return 0;
 }
